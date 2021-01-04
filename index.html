@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<header style="text-align: center;background-image: url(/image/diego-jimenez-A-NVHPka9Rk-unsplash.jpg); background-size: 100% 100%;">
+    <h1 style="color: white;">Welcome to <span style="color: crimson;">Travel Talkies</span>.</h1>
+    <img style="background-blend-mode: lighten; opacity: 39%; border-radius: 50%;" src="/image/chuttersnap-QkPb5g9p338-unsplash.jpg" alt="">
+</header>
+
+<div class="intro" style="background-color: black;color: white;">
+    
+<p style="font-size: 1.3em;text-align: center; padding: 0 9em;"> Looking for the next best destination for <span style="color: crimson;">travel?</span> Don't worry! You are at the right place.</p>
+ 
+ 
+
+ <div class="test" style="display: flex;">
+    <img style="height: 100%; box-sizing: border-box;" src="/image/kira-auf-der-heide-8s1wfA6aB-4-unsplash.jpg" alt="">
+    <img src="/image/kira-auf-der-heide-Bd99sJ4MKuU-unsplash.jpg" style="box-sizing: border-box;" alt="">
+
+ </div>
+ 
+ 
+</div>
+
+<div class="direction">
+    <h2 style="padding: 0.3rem 1rem; transform: translateX(-1rem);">Scroll Down below to get on the quest for the next best vacay destination 👇</h2>
+</div>
+
+<div class="first">
+    <h2 style="background-color: darkcyan;">Welcome to Venice - The City Of <span style="color: crimson;">Risi i Bisi</span> </h2>
+     <div class="images images_active images_scroll" style="padding: 1rem 1rem; text-align: center; transition: 0.3s fade-in;" hidden >
+         <img src="/image/damiano-baschiera-hFXZ5cNfkOk-unsplash.jpg" alt="">
+         <img src="/image/jack-ward-rknrvCrfS1k-unsplash.jpg" alt="">
+         <img src="/image/josh-hild-K4WXehq5Alc-unsplash.jpg" alt="">
+         <img src="/image/karl-kohler-dV1S_uKSb6A-unsplash.jpg" alt="">
+     </div>
+
+</div>
+
+
+<!--<div class="second">
+    <h2 style="background-color:crimson">Welcome to Italy - The City of <span style="color: white;">Pizza & Pasta</span>  </h2>
+</div>-->
+
+<script>
+    const images = document.querySelector('.images')
+
+
+    function scrollEvent(e){
+        console.log(e.key)
+        if(e.key=== 'ArrowDown'){
+            images.removeAttribute('hidden')
+        }
+        else if(e.key ==='ArrowUp'){
+            images.setAttribute('hidden', e.key)
+        }
+    }
+
+
+    window.addEventListener('keydown' , scrollEvent)
+</script>
+</body>
+
+<style>
+    img{
+        height: 25%;
+        width: 50%;
+        margin-bottom: 0.5rem;
+    }
+    .images_active{
+        background-color: crimson;
+
+    }
+
+    .images_scroll{
+      background: linear-gradient(to right , crimson , darkcyan);
+      ;
+    }
+
+   
+</style>
+</html>
